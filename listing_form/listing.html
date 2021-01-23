@@ -1,0 +1,76 @@
+
+
+
+{% block content %}
+
+    <div class="form-wrapper">
+      <h2 class="title">Listing</h2>
+
+      <form method="POST" action="{{ url_for('contact') }}">
+
+          <fieldset class="form-field">
+              {{ form.name.label }}
+              {{ form.name }}
+	      {% if form.name.errors %}
+              <ul class="errors">
+	      {% for error in form.name.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+              </fieldset>
+
+          <fieldset class="form-field">
+              {{ form.institution.label }}
+              {{ form.institution }}
+	       {% if form.institution.errors %}
+              <ul class="errors">
+	      {% for error in form.institution.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+          </fieldset>
+
+          <fieldset class="form-field">
+              {{ form.category_of_resource.label }}
+              {{ form.category_of_resource }}
+	       {% if form.category_of_resource.errors %}
+              <ul class="errors">
+	      {% for error in form.category_of_resource.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+          </fieldset>
+
+ 	   <fieldset class="form-field">
+              {{ form.name_of_resource.label }}
+              {{ form.name_of_resource }}
+	      {% if form.name_of_resource.errors %}
+              <ul class="errors">
+	      {% for error in form.name_of_resource.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+          </fieldset>
+
+          <fieldset class="form-field">
+              {{ form.further_description.label }}
+              {{ form.further_description }}
+	          {% if form.further_description.errors %}
+              <ul class="errors">
+	      {% for error in form.further_description.errors %}
+              <li>{{ error }}</li>
+              {% endfor %}
+              </ul>
+              {% endif %}
+          </fieldset>
+
+          {{ form.submit }}
+
+      </form>
+    </div>
+
+{% endblock %}
