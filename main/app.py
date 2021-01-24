@@ -9,6 +9,7 @@ from flask_login import LoginManager, UserMixin, login_user, login_required, log
 import sqlite3
 from views.forms import LoginForm, SignupForm, ListingForm
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Education_Hex'
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////D/HexCambridge/Hex-Cambridge/main/database/users.db'
@@ -50,6 +51,7 @@ def homepage():
 def browse():
     return render_template('listing.html')
 
+@login_required
 @app.route('/post')
 def post():
     return render_template('post.html')

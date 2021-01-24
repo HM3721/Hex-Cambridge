@@ -4,8 +4,42 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     background-color: lavender;
-    background: url(https://i.pinimg.com/originals/0e/55/39/0e5539dcd4e34d0e928859e4b8eb1209.jpg) no-repeat;
+    background: url(https://img.freepik.com/free-vector/white-gray-marble-realistic-texture-background_107791-515.jpg?size=626&ext=jpg) no-repeat;
     background-size: cover;        
+}
+
+.top-nav a {
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+    margin-top: .3em;
+    margin-right: 2em;
+    padding: .5em 1em;
+    padding-bottom: 0em;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.hero-bg {
+    background: #307D99 url('https://wallpaperaccess.com/full/124412.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-bottom: 4em;
+}
+
+.hero-bg h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2em 0 1.2em;
+    margin-bottom: 0em;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 2em 0 1.2em;
 }
 
 .title {
@@ -14,14 +48,11 @@ body {
 }
 
 .form-wrapper h2 {
-    padding: 1em;
+    padding: 0em;
+    padding-left: .8em;
 }
 
 .form-wrapper p {
-    margin-left: 1em;
-}
-
-.form-wrapper a {
     margin-left: 1em;
 }
 
@@ -63,6 +94,24 @@ input[type=button] {
     font-size: 1.3em;
     float: centre;
     cursor: pointer;
+}
+
+.form-wrapper a {
+        background-color:orange;
+        color: white;
+        padding: .5em;
+        margin-left: 1em;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1rem;
+}
+
+.hero-bg h2 {
+    color: white;
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1em;
 }
 
 .top {
