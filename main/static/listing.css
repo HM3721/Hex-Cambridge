@@ -126,6 +126,10 @@ input[type=button] {
     animation: fadeIn 2s forwards;
 }
 
+.form-wrapper h2 {
+    padding-top: 0em;
+}
+
 .overlay {
     position: absolute;
     height: 100vh;
