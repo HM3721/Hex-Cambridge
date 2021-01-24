@@ -14,12 +14,20 @@ body {
 }
 
 .top-nav a {
+    display: inline-block;
+    overflow: hidden;
     text-align: left;
+    margin-top: .3em;
     margin-right: 2em;
-    padding: 1em 2em;
+    padding: 1em 1em;
     text-decoration: none;
     font-weight: bold;
     color: black;
+    font-size: 1.2rem;
+}
+
+.topnav a:hover {
+    color: grey;
 }
 
 header {
@@ -60,24 +68,6 @@ h1 span::before {
 .hero-bg p {
     font-weight: bold;
     margin: 0 1em 3em;
-}
-
-input[type=button] {
-    background-color: #F89104;
-    border: none;
-    width: 15%;
-    color: white;
-    font-weight: bold;
-    padding: 1em 1em;
-    margin-left: 24%;
-    border-radius: .5em;
-    font-size: 1.3em;
-    float: centre;
-    cursor: pointer;
-}
-
-input[type=button]:hover {
-    background-color: rgb(216, 126, 1);
 }
 
 .bio {

@@ -5,21 +5,35 @@
     <title></title>
     <link rel="stylesheet" href="../static/login.css">
   </head>
+
   <body>
-<div class="login-box">
-  <h1>Login</h1>
-  <div class="textbox">
-    <i class="fas fa-user"></i>
-    <input type="text" placeholder="Username">
-  </div>
+    <div class="logo">
+      <h2>
+        Nameless
+      </h2>
+    </div>
+    
+    <div class="login-box">
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Email">
+      </div>
 
-  <div class="textbox">
-    <i class="fas fa-lock"></i>
-    <input type="password" placeholder="Password">
-  </div>
+      <div class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password">
+      </div>
 
-  <input type="button" class="btn" value="Sign in">
-</div>
+      <form action="/home">
+        <input type="submit" class="btn" value="Sign in">
+      </form>
+
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+    </div>
   </body>
 </html>
 

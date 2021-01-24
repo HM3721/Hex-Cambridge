@@ -6,6 +6,12 @@ body{
   background: url(https://wallpaperaccess.com/full/142356.jpg) no-repeat;
   background-size: cover;
 }
+
+.logo {
+  color: white;
+  margin-left: 1em;
+}
+
 .login-box{
   width: 280px;
   position: absolute;

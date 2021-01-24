@@ -1,76 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/listing.css">
+</head>
 
+<body>
 
-
-{% block content %}
-
+  <div class="title">
+    <h2 class="title">Listings</h2>
+  </div>
     <div class="form-wrapper">
-      <h2 class="title">Listing</h2>
 
-      <form method="POST" action="{{ url_for('contact') }}">
+      
+          <fieldset class="form-field">
+              <h2>
+                AQA Physics: A Level 
+              </h2>
+              <p>
+                  I am currently enrolled in Polyteknik Teknikal and I require a Physics textbook for my A Level exams.
+              </p>
+              <a href="details">Details</a>
+            </fieldset>
 
           <fieldset class="form-field">
-              {{ form.name.label }}
-              {{ form.name }}
-	      {% if form.name.errors %}
-              <ul class="errors">
-	      {% for error in form.name.errors %}
-              <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
-              {% endif %}
-              </fieldset>
-
-          <fieldset class="form-field">
-              {{ form.institution.label }}
-              {{ form.institution }}
-	       {% if form.institution.errors %}
-              <ul class="errors">
-	      {% for error in form.institution.errors %}
-              <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
-              {% endif %}
+            <h2>
+                DataCamp: Introduction to SQL 
+            </h2>
+            <p>
+                I am currently enrolled in ABC University. As I wish to transition into a career in data science,
+                I am looking to gain the necessary skills online through online courses.
+            </p>
+            <a href="details">Details</a>
           </fieldset>
 
           <fieldset class="form-field">
-              {{ form.category_of_resource.label }}
-              {{ form.category_of_resource }}
-	       {% if form.category_of_resource.errors %}
-              <ul class="errors">
-	      {% for error in form.category_of_resource.errors %}
-              <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
-              {% endif %}
+            <h2>
+                Kindle account 
+            </h2>
+            <p>
+                I am an avid reader but I have limited access to books in my village. I am hoping that
+                I can get an online ebook account so that I can have a wider access to books of different types.
+            </p>
+            <a href="details">Details</a>
           </fieldset>
 
  	   <fieldset class="form-field">
-              {{ form.name_of_resource.label }}
-              {{ form.name_of_resource }}
-	      {% if form.name_of_resource.errors %}
-              <ul class="errors">
-	      {% for error in form.name_of_resource.errors %}
-              <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
-              {% endif %}
-          </fieldset>
-
-          <fieldset class="form-field">
-              {{ form.further_description.label }}
-              {{ form.further_description }}
-	          {% if form.further_description.errors %}
-              <ul class="errors">
-	      {% for error in form.further_description.errors %}
-              <li>{{ error }}</li>
-              {% endfor %}
-              </ul>
-              {% endif %}
-          </fieldset>
-
-          {{ form.submit }}
-
-      </form>
+            <h2>
+                Spotify 1 year subscription
+            </h2>
+            <p>
+                I am a student pursuing electronic music and I aspire to be a DJ in the future. However, I need a platform
+                to showcase my music and unofrtunately, my current financial situtation limits the platforms that I can use to 
+                access a wider audience base.
+            </p>
+            <a href="details">Details</a>
+        </fieldset>
+     
     </div>
+</body>
+</html>
 
-{% endblock %}
