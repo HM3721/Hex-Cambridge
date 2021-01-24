@@ -11,46 +11,6 @@
 body {font-family: Arial, Helvetica, sans-serif;}
 * {box-sizing: border-box;}
 
-h3 {
-  margin-left: 1em;
-}
-
-.top-nav a {
-    display: inline-block;
-    overflow: hidden;
-    text-align: left;
-    margin-top: .3em;
-    margin-right: 2em;
-    padding: .5em 1em;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 1.2rem;
-}
-
-.hero-bg {
-    background: #307D99 url('https://wallpaperaccess.com/full/124412.jpg');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding-bottom: 4em;
-}
-
-.hero-bg h1 {
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
-    margin: 2em 0 1.2em;
-}
-
-.hero-bg h2 {
-    color: white;
-    text-decoration: none;
-    margin-top: .2em;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-top: 1.5em;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -80,91 +40,17 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
-
-
-.top {
-    animation: fadeIn 2s forwards;
-}
-
-.middle {
-    animation: fadeIn 2s forwards;
-}
-
-.bottom {
-    animation: fadeIn 2s forwards;
-}
-
-.overlay {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: rgba(0,0,0,.9);
-    z-index: 1;
-    place-content: center;
-    color: white;
-    display: none;
-    opacity: 0;
-}
-
-.animate-overlay {
-    animation: overlay 3s forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-2em);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes overlay {
-    0% {
-        opacity: 0;
-    }
-    30% {
-        opacity: 1;
-    }
-    70% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
 </style>
 </head>
 <body>
       <div class="top-nav">
               <a href="home">Home</a>
-              <a href="login">Sign in</a>
+              <a href="login">Log Out</a>
               <a href="browse">Browse listings</a>
               <a href="post">Post a listing</a>
               <i class="fa fa-bars"></i>
       </div>
 
-<<<<<<< HEAD
-  <div class="top-nav">
-    <a href="home">Home</a>
-    <a href="browse">Browse listings</a>
-    <a href="post">Post a listing</a>
-    <a href="login">Log Out</a>
-    <i class="fa fa-bars"></i>
-  </div> 
-
-  <div class="hero-bg">
-    <section class="top">
-        <h2>Dear Robin</h2>
-        <h1>An investment in knowledge pays the best interest. 
-          - Benjamin Franklin</h1>
-    </section>
-  </div>
-
-<h3>Post a listing</h3>
-=======
       <div class="hero-bg">
           <section class="top">
               <header>
@@ -177,7 +63,6 @@ input[type=submit]:hover {
           </section>
       </div>
 <!--<h3>Post a listing</h3>-->
->>>>>>> a8c882abbaa3f89e7027aa67921874b2413278ba
 
 <div class="container">
   <form action="/home">
